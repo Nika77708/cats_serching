@@ -1,8 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "searching_cats",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://Nika77708.github.io/searching_cats",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /parcel-project-template/"
