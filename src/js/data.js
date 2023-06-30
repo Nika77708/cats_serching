@@ -1,6 +1,4 @@
 import {fetchApi, fetchCatByBreed} from '../services/cat-api.js'
-
-
 import '../sass/_test.scss'
 
 const select = document.querySelector('.breed-select');
