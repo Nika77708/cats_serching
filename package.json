@@ -1,11 +1,11 @@
 {
-  "name": "searchingCats",
+  "name": "cats_serching",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://nika77708.github.io/searchingCats",
+  "homepage": "https://Nika77708.github.io/cats_serching/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /searchingCats/"
+    "build": "parcel build src/*.html --public-url /cats_serching/"
   },
   "repository": {
     "type": "git",

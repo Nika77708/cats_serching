@@ -2,33 +2,32 @@
   display: none;
 }
 
-img {
-  width: 60%;
+.pic {
+  width: 65%;
   height: auto;
   margin-top: 30px;
 }
 
-
-.cat-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
-    margin-top: 30px;
-    border-radius: 10%;
-    border: 1px solid;
-    padding: 10px;
-    box-shadow: 5px 10px #888888;
+.cat-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-top: 30px;
+  border-radius: 10%;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-.description, .temperament{
-    width: 80%;
-    text-align: justify;
+.description,
+.temperament {
+  width: 80%;
+  text-align: justify;
 }
