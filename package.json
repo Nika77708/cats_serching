@@ -2,7 +2,7 @@
   "name": "cats_serching",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Nika77708.github.io/cats_serching/",
+  "homepage": "https://alexkotliar777.github.io/cats_serching/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /cats_serching/"
