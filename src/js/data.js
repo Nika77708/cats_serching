@@ -1,5 +1,5 @@
-import {fetchApi, fetchCatByBreed} from '../services/cat-api.js'
-import '../sass/_test.scss'
+import { fetchApi, fetchCatByBreed } from '../services/cat-api.js';
+import '../sass/_test.scss';
 
 const select = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
@@ -21,12 +21,15 @@ function optionsList(dates) {
 
 const createInfoMarkup = ({ name, description, temperament }) => {
   const cardInfo = document.createElement('div');
+  cardInfo.classList.add('card');
   const title = document.createElement('h2');
   title.innerText = name;
   const about = document.createElement('p');
+  about.classList.add('description');
   about.innerText = description;
 
   const temperamentInfo = document.createElement('p');
+  temperamentInfo.classList.add('temperament');
   temperamentInfo.innerText = temperament;
   const temperamentBold = document.createElement('span');
   temperamentBold.innerText = 'Temperament:';
@@ -45,16 +48,21 @@ const createImgMarkup = ([{ url }]) => {
   return img;
 };
 
+//
+
 async function createBreedList() {
   try {
     loader.style.display = 'block';
+    catInfo.style.display = 'none';
     const data = await fetchApi();
     optionsList(data);
 
     async function renderInfo() {
+      catInfo.style.display = 'flex';
       const image = await fetchCatByBreed(select.value);
       const renderImg = createImgMarkup(image);
       const infoObj = data.filter(el => el.id === select.value);
+
       catInfo.replaceChildren();
       loader.style.display = 'none';
       catInfo.append(renderImg, createInfoMarkup(...infoObj));
