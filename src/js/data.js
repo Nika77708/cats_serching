@@ -48,8 +48,6 @@ const createImgMarkup = ([{ url }]) => {
   return img;
 };
 
-//
-
 async function createBreedList() {
   try {
     loader.style.display = 'block';
