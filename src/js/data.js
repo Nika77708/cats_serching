@@ -3,7 +3,7 @@ import '../sass/_test.scss'
 
 const select = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
-const errorMessage = document.querySelector('.error');
+const error = document.querySelector('.error');
 const loader = document.querySelector('.loader');
 
 function createOption({ id, name }) {
@@ -62,7 +62,7 @@ async function createBreedList() {
 
     select.addEventListener('change', renderInfo);
   } catch (err) {
-    errorMessage.style.display = 'block';
+    error.style.display = 'block';
   }
 }
 
